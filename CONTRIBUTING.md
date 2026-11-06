@@ -141,7 +141,7 @@ A comment whose first line is one of these runs it:
 | `/fix` | commits the fix the pull request's own latest CI run computed (Pint, Rector, `composer normalize`, markdownlint) to its branch, where the branch is in this repository and neither its base nor a protected branch | someone with write access, or the pull request's author |
 | `/docs <words>` | replies with at most three links to headings under `.docs` that match the words | anyone, on an issue or a pull request |
 
-A rehearsal line with trailing spaces.   
+A rehearsal line with trailing spaces.
 
 ## Finding your way
 
