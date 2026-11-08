@@ -1,0 +1,89 @@
+{
+    "format": 1,
+    "commit": "ecb7a27a6a6baffa240a88324a500ed112889433",
+    "time": "2026-11-08T11:51:54Z",
+    "verdict": "failed",
+    "score": 99.99,
+    "trees": [
+        {
+            "path": "src",
+            "floor": 100.0,
+            "score": 99.99
+        },
+        {
+            "path": "plugins/default/src",
+            "floor": 100.0,
+            "score": 100.0
+        },
+        {
+            "path": "plugins/laravel/src",
+            "floor": 100.0,
+            "score": 100.0
+        },
+        {
+            "path": "plugins/security/src",
+            "floor": 100.0,
+            "score": 100.0
+        },
+        {
+            "path": "plugins/symfony/src",
+            "floor": 100.0,
+            "score": 100.0
+        }
+    ],
+    "newCode": {
+        "floor": 100.0
+    },
+    "heatmap": [
+        {
+            "path": "src/Core/Format/Gzip.php",
+            "score": 97.22,
+            "notKilled": 1
+        },
+        {
+            "path": "src/Core/Php/Tokens.php",
+            "score": 98.83,
+            "notKilled": 1
+        },
+        {
+            "path": "plugins/default/src/Argument.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/BitwiseAndToBitwiseOr.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/BitwiseOrToBitwiseAnd.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/BitwiseXorToBitwiseAnd.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/DivisionToMultiplication.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/MinusToPlus.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/ModulusToMultiplication.php",
+            "score": 100.0,
+            "notKilled": 0
+        },
+        {
+            "path": "plugins/default/src/Arithmetic/MultiplicationToDivision.php",
+            "score": 100.0,
+            "notKilled": 0
+        }
+    ]
+}
