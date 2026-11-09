@@ -1,14 +1,14 @@
 {
     "format": 1,
     "commit": "ecb7a27a6a6baffa240a88324a500ed112889433",
-    "time": "2026-11-08T11:51:54Z",
+    "time": "2026-11-09T12:46:28Z",
     "verdict": "failed",
-    "score": 99.99,
+    "score": 99.92,
     "trees": [
         {
             "path": "src",
             "floor": 100.0,
-            "score": 99.99
+            "score": 99.92
         },
         {
             "path": "plugins/default/src",
@@ -34,56 +34,137 @@
     "newCode": {
         "floor": 100.0
     },
+    "mutators": [
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\ControlStructures\\ForeachEmptyIterable",
+            "seconds": 6626.454126630035,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Logical\\InstanceOfToTrue",
+            "seconds": 6485.028027079897,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Logical\\InstanceOfToFalse",
+            "seconds": 6408.727222538242,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\ControlStructures\\TernaryNegated",
+            "seconds": 3786.318681967458,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Removal\\RemoveArrayItem",
+            "seconds": 2693.246382929682,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Logical\\BooleanAndToBooleanOr",
+            "seconds": 1696.985381047391,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\ControlStructures\\IfNegated",
+            "seconds": 1559.8488093289714,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Number\\DecrementInteger",
+            "seconds": 1466.0481178792138,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Array\\UnwrapArrayValues",
+            "seconds": 1175.7534613752146,
+            "survived": 0,
+            "killRate": 100.0
+        },
+        {
+            "runner": "pest",
+            "mutator": "Pest\\Mutate\\Mutators\\Logical\\RemoveNot",
+            "seconds": 1111.0067303972196,
+            "survived": 0,
+            "killRate": 100.0
+        }
+    ],
     "heatmap": [
+        {
+            "path": "src/Core/Php/OwnVariables.php",
+            "score": 90.9,
+            "base": 100.0,
+            "notKilled": 1
+        },
+        {
+            "path": "src/Adapter/Pest/Warm/Worker.php",
+            "score": 92.07,
+            "base": 100.0,
+            "notKilled": 8
+        },
+        {
+            "path": "src/Adapter/Process/LocalProcesses.php",
+            "score": 92.53,
+            "base": 100.0,
+            "notKilled": 5
+        },
+        {
+            "path": "src/Core/Test/TestDependencies.php",
+            "score": 93.33,
+            "base": 100.0,
+            "notKilled": 1
+        },
+        {
+            "path": "src/Core/Format/JsonIndent.php",
+            "score": 93.75,
+            "base": 100.0,
+            "notKilled": 2
+        },
+        {
+            "path": "src/Cli/Command/WatchCommand.php",
+            "score": 94.36,
+            "base": 100.0,
+            "notKilled": 4
+        },
+        {
+            "path": "src/Core/Mutant/Ended.php",
+            "score": 95.0,
+            "base": 100.0,
+            "notKilled": 1
+        },
+        {
+            "path": "src/Core/Test/MethodDeclarations.php",
+            "score": 95.23,
+            "base": 100.0,
+            "notKilled": 1
+        },
+        {
+            "path": "src/Core/Migration/LineDiff.php",
+            "score": 96.22,
+            "base": 100.0,
+            "notKilled": 4
+        },
         {
             "path": "src/Core/Format/Gzip.php",
             "score": 97.22,
             "notKilled": 1
-        },
-        {
-            "path": "src/Core/Php/Tokens.php",
-            "score": 98.83,
-            "notKilled": 1
-        },
-        {
-            "path": "plugins/default/src/Argument.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/BitwiseAndToBitwiseOr.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/BitwiseOrToBitwiseAnd.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/BitwiseXorToBitwiseAnd.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/DivisionToMultiplication.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/MinusToPlus.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/ModulusToMultiplication.php",
-            "score": 100.0,
-            "notKilled": 0
-        },
-        {
-            "path": "plugins/default/src/Arithmetic/MultiplicationToDivision.php",
-            "score": 100.0,
-            "notKilled": 0
         }
     ]
 }
