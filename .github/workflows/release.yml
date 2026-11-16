@@ -202,10 +202,11 @@ jobs:
   # what it asks for itself: plan, shards and verdict read, fetch adds
   # id-token: write, and the deliver jobs, which run none of the project's
   # code, add pull-requests: write. It runs on the runner ci.yml's gate does,
-  # so its proofs are keyed alike.
+  # so its proofs are keyed alike. In this rehearsal it runs only where the
+  # repository variable RELEASE_RUNS_THE_GATE is true.
   gate:
     name: mutation
-    if: ${{ false }}
+    if: ${{ vars.RELEASE_RUNS_THE_GATE == 'true' }}
     needs: verify
     permissions:
       contents: write
